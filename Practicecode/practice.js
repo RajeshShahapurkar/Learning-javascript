@@ -113,23 +113,31 @@
 // }
 
 
-// write a code which can give grades to students accourding to their scroes.
-student=prompt("Enter name of the student:");
-marks=prompt("Enter the grades for the student:");
+// // write a code which can give grades to students accourding to their scroes.
+// student=prompt("Enter name of the student:");
+// marks=prompt("Enter the grades for the student:");
 
-if(marks>80 && marks<100){
-    console.log(student+ " scrored grade A")
-}else if(marks>70 && marks<89){
-    console.log(student+ " scrored grade B")
-}else if(marks>60 && marks<69){
-    console.log(student+ " scrored grade C")
-}else if(marks>50 && marks<59){
-    console.log(student+ " scrored grade D")
-}else if(marks>0 && marks<49){
-    console.log(student+ " scrored grade F")
+// if(marks>80 && marks<100){
+//     console.log(student+ " scrored grade A")
+// }else if(marks>70 && marks<89){
+//     console.log(student+ " scrored grade B")
+// }else if(marks>60 && marks<69){
+//     console.log(student+ " scrored grade C")
+// }else if(marks>50 && marks<59){
+//     console.log(student+ " scrored grade D")
+// }else if(marks>0 && marks<49){
+//     console.log(student+ " scrored grade F")
+// }
+
+
+// // Arrays in js
+// const persons =["ram","hari","sita","bishal","gita"];
+// console.log(persons[0])
+
+
+// print all even number from 0 to 100.
+for(let i=0; i<100; i++){
+    if(i%2==0){
+        console.log(i)
+    }
 }
-
-
-// Arrays in js
-const persons =["ram","hari","sita","bishal","gita"];
-console.log(persons[0])
