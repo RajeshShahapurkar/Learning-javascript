@@ -136,8 +136,33 @@
 
 
 // print all even number from 0 to 100.
-for(let i=0; i<100; i++){
-    if(i%2==0){
-        console.log(i)
+// for(let i=0; i<100; i++){
+//     if(i%2==0){
+//         console.log(i)
+//     }
+// }
+
+
+// game where we start with a random number, user keeps guessing it until gets it right.
+const secretNumber = Math.floor(Math.random() * 100) + 1;
+    let guess;
+    let attempts = 0;
+
+    while (true) {
+      guess = prompt("Guess a number between 1 and 100:");
+      attempts++;
+
+      // Convert input to number
+      guess = Number(guess);
+
+      if (guess === secretNumber) {
+        alert(`Correct! The number was ${secretNumber}. You guessed it in ${attempts} attempts.`);
+        break;
+      } else if (guess < secretNumber) {
+        alert("Too low! Try again.");
+      } else if (guess > secretNumber) {
+        alert("Too high! Try again.");
+      } else {
+        alert("Please enter a valid number.");
+      }
     }
-}
