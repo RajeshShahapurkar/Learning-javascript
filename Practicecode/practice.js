@@ -169,5 +169,11 @@
 
 
 //generate username using his fullname .
-let fname=prompt("Enter your full name:");
-console.log(`Your user name is: @${fname}${fname.length}`)
+// let fname=prompt("Enter your full name:");
+// console.log(`Your user name is: @${fname}${fname.length}`)
+
+
+// finding average of students given marks.
+let marks=[85,97,44,37,76,60];
+avg=marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5]/6;
+console.log("the average is:", avg);
