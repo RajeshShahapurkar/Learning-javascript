@@ -174,6 +174,17 @@
 
 
 // finding average of students given marks.
-let marks=[85,97,44,37,76,60];
-avg=marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5]/6;
-console.log("the average is:", avg);
+// let marks=[85,97,44,37,76,60];
+// avg=marks[0]+marks[1]+marks[2]+marks[3]+marks[4]+marks[5]/6;
+// console.log("the average is:", avg);
+
+
+// create a new btn.give it text "click me", bgcolor of red and text color of white,insert the btn as the first element inside the body tag.
+
+let btn=document.createElement("button");
+btn.innerText="click me";
+btn.style.backgroundColor="red";
+btn.style.color="white";
+let body=document.querySelector("body")
+body.prepend(btn)
+ 
