@@ -188,7 +188,41 @@
 // body.prepend(btn)
 
 // practice question 2.
-let para=document.querySelector(".content")
-para.classList.add("newclass");
+// let para=document.querySelector(".content")
+// para.classList.add("newclass");
+
+
+// // the theme change button.type1.
+// let button= document.querySelector("#button");
+// let btn= "light";
+
+// button.addEventListener("click", ()=>{
+//     if(btn==="light"){
+//         btn="dark";
+//         document.querySelector("body").style.backgroundColor="black";
+//     }else{
+//         btn="light";
+//          document.querySelector("body").style.backgroundColor="white";
+//     }
+
+//     console.log(btn);
+// });
 
  
+// the theme change button.type2.
+let button= document.querySelector("#button");
+let btn= "light";
+
+button.addEventListener("click", ()=>{
+    if(btn==="light"){
+        btn="dark";
+        document.querySelector("body").classList.add("dark");
+        document.querySelector("body").classList.remove("light");
+    }else{
+        btn="light";
+         document.querySelector("body").classList.add("light");
+         document.querySelector("body").classList.remove("dark");
+    }
+
+    console.log(btn);
+});
