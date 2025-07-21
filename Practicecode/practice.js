@@ -209,20 +209,32 @@
 // });
 
  
-// the theme change button.type2.
-let button= document.querySelector("#button");
-let btn= "light";
+// the theme change button.type2,by selecting form the style.css using classlist
+// let button= document.querySelector("#button");
+// let btn= "light";
 
-button.addEventListener("click", ()=>{
-    if(btn==="light"){
-        btn="dark";
-        document.querySelector("body").classList.add("dark");
-        document.querySelector("body").classList.remove("light");
-    }else{
-        btn="light";
-         document.querySelector("body").classList.add("light");
-         document.querySelector("body").classList.remove("dark");
-    }
+// button.addEventListener("click", ()=>{
+//     if(btn==="light"){
+//         btn="dark";
+//         document.querySelector("body").classList.add("dark");
+//         document.querySelector("body").classList.remove("light");
+//     }else{
+//         btn="light";
+//          document.querySelector("body").classList.add("light");
+//          document.querySelector("body").classList.remove("dark");
+//     }
 
-    console.log(btn);
-});
+//     console.log(btn);
+// });
+
+
+// 21/07/25
+function display() {
+    let text = document.getElementById("msg").value;
+    document.getElementById("output").innerText = text;
+}
+
+function message(){
+    let name=document.getElementById("name").value;
+    alert(`Thank you for registering ${name}`);
+}
