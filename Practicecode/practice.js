@@ -229,12 +229,79 @@
 
 
 // 21/07/25
-function display() {
-    let text = document.getElementById("msg").value;
-    document.getElementById("output").innerText = text;
+// function display() {
+//     let text = document.getElementById("msg").value;
+//     document.getElementById("output").innerText = text;
+// }
+
+// function message(){
+//     let name=document.getElementById("name").value;
+//     alert(`Thank you for registering ${name}`);
+// }
+
+
+// 23-07-2025
+getting user input.
+
+1.easy way = window.prompt or prompt.
+2.professional way = html textbox. 
+
+1)
+let username=window.prompt("whats your username:");
+
+console.log(`username: ${username}`);
+
+// 2)
+let username;
+
+document.getElementById("submit").onclick=function(){
+    username = document.getElementById("mytext").value ;
+    document.getElementById("h1").textContent= `hello ${username}`;
+    console.log(username);
 }
 
-function message(){
-    let name=document.getElementById("name").value;
-    alert(`Thank you for registering ${name}`);
+
+// typeconversions.
+let age=window.prompt("how old are you:");
+age=Number(age) 
+
+age+=1;
+console.log(age, typeof(age));
+
+
+// const = a variable that can't be changed!
+const pi=3.14159;
+let radius;
+let circumference;
+
+
+document.getElementById("submit").onclick=function(){
+    radius=document.getElementById("mytext").value ;
+    radius=Number(radius);
+    circumference=2*pi*radius;
+    document.getElementById("h3").textContent=circumference + " cm";
 }
+
+// counter program.
+let result =document.getElementById("result");
+let increase=document.getElementById("add");
+let decrease=document.getElementById("sub");
+let reset=document.getElementById("reset");
+
+let counter=0;
+
+increase.onclick=function(){
+    counter++;
+    result.textContent=counter;
+}
+
+decrease.onclick=function(){
+    counter--;
+    result.textContent=counter;
+}
+
+reset.onclick=function(){
+    counter=0;
+    result.textContent=counter;
+}
+

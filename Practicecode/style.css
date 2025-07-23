@@ -1,3 +1,7 @@
+*{
+    text-align: center;
+}
+
 .content{
     color: red;
 }
@@ -16,4 +20,11 @@
     color: black;
 }
 
-
+button{
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+    border-radius: 40px;
+}
